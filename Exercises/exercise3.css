@@ -1,0 +1,125 @@
+*{
+    padding: 0;;
+    margin: 0;
+}
+
+/* .frame{
+    
+    
+} */
+ .bgimage{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    /* background-image: "Exercises/bg.jpg"; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+ }
+ .bg{
+    object-fit: cover;
+ }
+ .frame
+ {
+    position: absolute;
+    top: 60px;
+    width: 500px;
+    height: 700px;
+    border: 2px solid white;
+    box-shadow: 1px 5px 20px 3px white;
+    border-radius: 20px;
+    outline: 5px solid white;
+    background-color: white;
+ }
+ .content{
+    /* border:1px solid black; */
+    padding: 5px 10px;
+    margin: 5px;
+   
+ }
+ ul{
+    display: flex;
+ }
+ ul li{
+    list-style: none;
+    list-style-position: inside;
+    border: 2px solid rgb(195, 187, 187);
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 5px;
+    color: rgb(150, 148, 145);
+ 
+    
+ }
+ body{
+    font-family: "Chelsea Market", system-ui;
+    /* color: rgb(150, 148, 145);
+ } */
+ 
+ }
+ .content > p{
+    color: rgb(86, 81, 81);
+    font-size: larger;
+ }
+
+ .button{
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+ }
+ 
+   .read-more{
+    /* display:block;
+    width: fit-content;
+    margin:25px auto;
+    padding:10px 20px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    color:rgb(7, 110, 151);
+    font-family: "Chelsea Market", system-ui;
+    background-color: rgba(135, 207, 235, 0.445); */
+    padding:10px 20px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    color:rgb(7, 110, 151);
+    font-family: "Chelsea Market", system-ui;
+    background-color: rgba(135, 207, 235, 0.445);
+}
+   
+   
+   
+ 
+ /* button{
+    
+   border: 2px solid black;
+   padding:5px 10px;
+   border-radius: 25px;
+   color: rgb(17, 149, 202);
+   font-family: "Chelsea Market", system-ui; 
+   background-color: rgba(135, 207, 235, 0.44);   
+    
+ } */
+@media (max-width:600px){
+
+    .frame{
+        width:85%;
+        top:20px;
+        /* height: 80%; */
+    }
+
+    ul{
+        flex-wrap:wrap;
+    }
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    .content p{
+        font-size:1rem;
+    }
+}
