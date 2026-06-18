@@ -109,6 +109,7 @@
         width:85%;
         top:20px;
         /* height: 80%; */
+        
     }
 
     ul{
@@ -122,4 +123,4 @@
     .content p{
         font-size:1rem;
     }
-}
+   }
