@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS varaibles</title>
+    <style>
+        :root{
+            --color:red;
+            --bgcolor:green;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            /* background-color: greenyellow; */
+            background-color: var(--bgcolor);
+            
+            border: 2px solid black;
+            padding: 5px;
+            margin:5px;
+        }
+        .container{
+            background-color: var(--color);
+            padding: 5px;
+            margin: 5px;
+        }
+        ul li{
+            list-style: none;
+            list-style-position: inside;
+            padding: 10px;
+            margin:5px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 600px){
+            :root{
+                --color:rgb(106, 0, 255);
+                --bgcolor: rgb(128, 0, 122);
+            }        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur architecto repellendus
+            impedit vitae eveniet, eos dolorem magni distinctio numquam sequi possimus! Totam, natus vel aliquid, ipsum
+            incidunt et facilis similique, excepturi blanditiis placeat atque possimus unde odio illum sunt distinctio
+            mollitia quos culpa! Fugiat.
+        </p>
+    </div>
+</body>
+
+</html>
