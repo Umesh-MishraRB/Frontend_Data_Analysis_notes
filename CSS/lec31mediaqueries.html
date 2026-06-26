@@ -1,0 +1,63 @@
+<!-- Why do we need to use the media queries -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+       :root{
+        --defpad:5px;
+        --defmargin:5px;
+        --color: rgba(255, 255, 0, 0.618);
+       }
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .container{
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+       }
+       .box{
+        border: 2px solid black;
+        padding: var(--defpad);
+        width: 344px;
+        margin:5px;
+        min-height: 300px;
+        /* display: inline-block; */
+        outline: 2px solid black;
+        background-color: var(--color);
+       }
+     
+        /* @media only/not only screen/speech/print and (expression) {
+
+        } */
+        /* @media screen and (orientation: landscapel) */
+       @media only screen and (max-width:600px){
+        :root{
+            --color: rgb(255, 102, 0);
+
+        }
+        .container{
+            flex-wrap: wrap;
+        }
+       }
+    </style>
+ </head>
+ <body>
+
+    <div class="container">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2">
+
+        </div>
+        <div class="box box3">
+
+        </div>
+    </div>
+ </body>
+ </html>
